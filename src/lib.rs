@@ -120,8 +120,8 @@ impl PhaseVocoder {
     ///
     /// Samples are expected to be normalized to the range [-1, 1].
     pub fn process<S, F>(&mut self,
-                         input: &[&[S]],
-                         output: &mut [&mut [S]],
+                         input: &Vec<Vec<S>>,
+                         output: &mut Vec<Vec<S>>,
                          mut processor: F)
                          -> usize
         where S: Float + ToPrimitive + FromPrimitive,
