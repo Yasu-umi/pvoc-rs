@@ -1,10 +1,12 @@
 extern crate rustfft;
 extern crate num;
+extern crate num_complex;
 extern crate apodize;
 
 use std::f64::consts::PI;
 use std::collections::VecDeque;
-use num::{Float, Complex, FromPrimitive, ToPrimitive};
+use num::{Float, FromPrimitive, ToPrimitive};
+use num_complex::Complex;
 
 #[allow(non_camel_case_types)]
 type c64 = Complex<f64>;
